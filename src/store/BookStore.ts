@@ -8,6 +8,7 @@ export interface BookStore {
     selectedBookId: string | null;
     selectedCategoryId: string;
     cart: Cart;
+    showPopout: boolean;
 }
 
 export interface Book {
@@ -78,7 +79,8 @@ export const sampleData: BookStore = {
         books: [],
         selectedBookId: null,
         isBuying: false
-    }
+    },
+    showPopout: false
 }
 
 

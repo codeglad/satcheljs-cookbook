@@ -6,6 +6,8 @@ import BookList from './BookList';
 import Cart from './Cart';
 import CategoryList from './CategoryList';
 import Description from './Description';
+import PopoutContent from './PopoutContent';
+import {showPopout} from '../actions/popout';
 
 require('./AppStyles.css');
 
@@ -24,6 +26,9 @@ export default observer(() => {
                     </div>
                 </div>
                 <Description />
+            </div>
+            <div>
+                <button onClick={() => showPopout()}>Show Popout</button>
             </div>
         </div>);
 });
